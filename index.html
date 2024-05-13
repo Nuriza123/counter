@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #counter{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="counter">0</button>
+    <button id="reset">reset</button>
+    <script>
+        var x = document.querySelector('#counter')
+        var i=0;
+        x.addEventListener('click', function(){
+            i++;
+            document.querySelector('#counter').innerHTML=i;
+        })
+        var y= document.querySelector('#reset')
+        y.addEventListener('click', function(){
+            var i=0;
+            document.querySelector('#counter').innerHTML=0
+        }
+    )
+        ;
+
+        
+
+       
+
+        
+    </script>
+</body>
+</html>
